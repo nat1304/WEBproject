@@ -1,0 +1,22 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{% block title %}{% endblock %}</title>
+  <!-- Styles -->
+  <link rel="stylesheet" href="{% static "selecter/bootstrap.min.css" %}">
+  <link rel="stylesheet" href="{% static "selecter/style.css" %}">
+</head>
+<body>
+  <section id="header">
+    <div class="top container">
+      <a href="http://127.0.0.1:8000/">FLASH-НАКОПИТЕЛИ</a>
+    </div>
+  </section>
+  <section id="content row" class="container">
+    {% block content %}{% endblock %}
+  </section>
+</body>
+</html>
